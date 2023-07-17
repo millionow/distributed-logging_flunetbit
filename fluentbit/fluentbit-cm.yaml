@@ -48,13 +48,6 @@ data:
         Read_From_Tail On
 
     [OUTPUT]
-        Name es
-        Match kube.*
-        Host ${FLUENT_ELASTICSEARCH_HOST}
-        Port  ${FLUENT_ELASTICSEARCH_PORT}
-        Index my_index
-
-    [OUTPUT]
         Name s3
         Match kube.*
         bucket copytestk9
