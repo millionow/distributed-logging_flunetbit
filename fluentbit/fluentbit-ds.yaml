@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: fluent-bit
-        image: fluent/fluent-bit:1.5
+        image: fluent/fluent-bit:2.1
         imagePullPolicy: Always
         ports:
           - containerPort: 2020
@@ -33,6 +33,10 @@ spec:
           value: "elasticsearch-master.default"
         - name: FLUENT_ELASTICSEARCH_PORT
           value: "9200"
+        - name: AWS_ACCESS_KEY_ID
+          value: "AKIASMIHXIOFFCA43ODS"
+        - name: AWS_SECRET_ACCESS_KEY
+          value: "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"      
         volumeMounts:
         - name: varlog
           mountPath: /var/log
