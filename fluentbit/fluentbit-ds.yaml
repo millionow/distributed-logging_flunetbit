@@ -34,9 +34,9 @@ spec:
         - name: FLUENT_ELASTICSEARCH_PORT
           value: "9200"
         - name: AWS_ACCESS_KEY_ID
-          value: "AKIASMIHXIOFFCA43ODS"
+          value: 
         - name: AWS_SECRET_ACCESS_KEY
-          value: "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"      
+          value: "  
         volumeMounts:
         - name: varlog
           mountPath: /var/log
